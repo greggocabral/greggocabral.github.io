@@ -7,16 +7,16 @@ var projects = [
 		'img': ''
 	},
 	{
-		'id': 'blumornadesayunoscom',
-		'title': 'Blumorna Desayunos',
-		'description': '<p>Single page responsive static website, developed for a small argentinean company that delivers homemade breakfasts.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
-		'link': 'blumornadesayunos.com',
-		'img': './img/blumornadesayunos.png'
+		'id': 'sentatecomar',
+		'title': 'Sentate website',
+		'description': '<p>Single page responsive static website, developed for an argentinean startup company.</p><p> The job involved designing the brand and logo and designing, building and publishing the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. </p>',
+		'link': 'sentate.com.ar',
+		'img': './img/sentate.png'
 	},
 	{
 		'id': 'elalmacendelosmueblescom',
 		'title': 'El almacén de los muebles',
-		'description': '<p>Single page responsive static website, developed for a small argentinean company that sell vintage style furniture.</p><p> The job involved designing, building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. </p>',
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that sell vintage style furniture.</p><p> The job involved designing, building and publishing the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. </p>',
 		'link': 'elalmacendelosmuebles.com',
 		'img': './img/elalmacendelosmuebles.png'
 	},
@@ -34,6 +34,13 @@ var projects = [
 		'link': 'plansandbreakfast.com',
 		'img': './img/plansandbreakfast.png'
 	}, 
+	{
+		'id': 'blumornadesayunoscom',
+		'title': 'Blumorna Desayunos',
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that delivers homemade breakfasts.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and publishing the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
+		'link': 'blumornadesayunos.com',
+		'img': './img/blumornadesayunos.png'
+	},
 	{
 		'id': 'randomquoter',
 		'title': 'Random Quoter',
@@ -55,17 +62,11 @@ var projects = [
 		'link': '',
 		'img': './img/sentate-mobile.png'
 	},
-	{
-		'id': 'sentatecomar',
-		'title': 'Sentate',
-		'description': '<p>Minimalistic responsive contact landing page, developed for a argentinean startup.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
-		'link': 'sentate.com.ar',
-		'img': './img/sentate-web.png'
-	},
+
 	{
 		'id': 'uluwatucraftcom',
 		'title': 'Uluwatu Craft',
-		'description': '<p>Single page responsive static website, developed for a small argentinean company that designs and builds furniture and other industrial styled objects.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that designs and builds furniture and other industrial styled objects.</p><p> The job involved helping the business owners to pick a name for the brand, designing their brand and logo and building and publishing the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. The logo design was done in Illustrator.</p>',
 		'link': 'uluwatucraft.com',
 		'img': './img/uluwatucraft.png'
 	},
@@ -73,7 +74,7 @@ var projects = [
 		'id': 'gregoriocabralme',
 		'title': 'Personal Website',
 		'description': '<p>Single page responsive static website, designed to display in an organized but minimalistic way, some of the projects I have been working on.</p> <p> Some of the technologies employed are HTML, CSS and jQuery. </p>  ',
-		'link': 'gregoriocabral.me',
+		'link': 'greggocabral.github.io',
 		'img': './img/gregoriocabral.png'
 	}, 
 	{
