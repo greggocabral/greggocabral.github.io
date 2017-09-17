@@ -14,6 +14,13 @@ var projects = [
 		'img': './img/blumornadesayunos.png'
 	},
 	{
+		'id': 'elalmacendelosmueblescom',
+		'title': 'El almacén de los muebles',
+		'description': '<p>Single page responsive static website, developed for a small argentinean company that sell vintage style furniture.</p><p> The job involved designing, building and hosting the website. </p><p> The technologies employed included Bootstrap, HTML, CSS and jQuery. </p>',
+		'link': 'elalmacendelosmuebles.com',
+		'img': './img/elalmacendelosmuebles.png'
+	},
+	{
 		'id': 'chrisburtonartcom',
 		'title': 'Chris Burton Art',
 		'description': "<p>Single page static website, developed for a german musician and photographer that decided to integrate and show all his work in one single site. </p> <p> The job consisted in designing and developing the website. </p><p> The technologies employed were HTML, CSS and jQuery, embedding soundcloud and pixie snippets to feature all of Chris' work hosted in those platforms. </p>",
