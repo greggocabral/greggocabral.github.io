@@ -59,8 +59,22 @@ var projects = [
 		'id': 'sentatepassenger',
 		'title': 'Passenger access to Sentate platform',
 		'description': '<p>Hybrid mobile app developed for an argentinean startup to provide access to a ticket booking platform.</p><p> The technologies employed included Ionic v1 framework, NodeJS and MongoDB.</p>',
-		'link': '',
+		'link': 'goo.gl/Ptqvte',
 		'img': './img/sentate-mobile.png'
+	},
+	{
+		'id': 'sentatedriver',
+		'title': 'Driver access to Sentate platform',
+		'description': '<p>Hybrid mobile app developed for an argentinean startup to provide access to a ticket booking platform.</p><p> The technologies employed included Ionic v1 framework, NodeJS and MongoDB.</p>',
+		'link': 'goo.gl/QviDSo',
+		'img': './img/sentate-driver.png'
+	},
+	{
+		'id': 'sentatecentral',
+		'title': 'Company access to Sentate platform',
+		'description': '<p>Web app developed for an argentinean startup to provide access to a ticket booking platform.</p><p> The technologies employed included AngularJS, Bootstrap, Karma, Protractor, NodeJS and MongoDB.</p>',
+		'link': '',
+		'img': './img/sentate-central.png'
 	},
 
 	{
