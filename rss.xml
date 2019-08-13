@@ -1,12 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 11 Aug 2019 16:11:55 GMT</lastBuildDate><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por Kyle Mathews, quien vive y trabaja en San
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 13 Aug 2019 13:31:14 GMT</lastBuildDate><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por Kyle Mathews, quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
 Deberías seguirlo en Twitter]]></description><link>https://greggocabral.github.io/es/</link><guid isPermaLink="false">https://greggocabral.github.io/es/</guid><content:encoded>&lt;p&gt;Escrito por &lt;strong&gt;Kyle Mathews&lt;/strong&gt;, quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
-&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[About this blog]]></title><description><![CDATA[TL/DR This is a blog about…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TL/DR&lt;/h1&gt;
-&lt;p&gt;This is a blog about…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><description><![CDATA[TL/DR Interests Work Study]]></description><link>https://greggocabral.github.io/about-me/</link><guid isPermaLink="false">https://greggocabral.github.io/about-me/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;TL/DR&lt;/h1&gt;
-&lt;h1&gt;Interests&lt;/h1&gt;
-&lt;h1&gt;Work&lt;/h1&gt;
-&lt;h1&gt;Study&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[Acerca de mi]]></title><description><![CDATA[¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante! Estoy seguro que escribiré un montón de cosas interesantes en el futuro…]]></description><link>https://greggocabral.github.io/es/acerca-de-mi/</link><guid isPermaLink="false">https://greggocabral.github.io/es/acerca-de-mi/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante!&lt;/p&gt;
+&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Acerca de mi]]></title><description><![CDATA[¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante! Estoy seguro que escribiré un montón de cosas interesantes en el futuro…]]></description><link>https://greggocabral.github.io/es/acerca-de-mi/</link><guid isPermaLink="false">https://greggocabral.github.io/es/acerca-de-mi/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante!&lt;/p&gt;
 &lt;p&gt;Estoy seguro que escribiré un montón de cosas interesantes en el futuro.&lt;/p&gt;
 &lt;p&gt;Ah, y aquí viene una gran cita de la Wikipedia sobre
 &lt;a href=&quot;https://es.wikipedia.org/wiki/Huevo_de_pato_en_salaz%C3%B3n&quot;&gt;huevo de pato en salazón&lt;/a&gt;.&lt;/p&gt;
@@ -20,52 +16,18 @@ tiempo. En un clima tropical, como el filipino, bastan con tres semanas. Sin
 embargo, en España por ejemplo, y dependiendo de la zona, podrían ser de 3 á 5
 semanas.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../../hello-world/salty_egg.jpg&quot; alt=&quot;Huevo de pato en salazón&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sentate]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://greggocabral.github.io/project-sentate/</link><guid isPermaLink="false">https://greggocabral.github.io/project-sentate/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/2b40c/salty_egg.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAcEAADAQACAwAAAAAAAAAAAAABESEAMUGBobH/2gAIAQEAAT8hsTTH2wx5gg2ZgM8d5JIfmMRAIe//2gAMAwEAAgADAAAAEMgv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxARwyusv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAcEAEBAAIDAQEAAAAAAAAAAAABEQAxIWGBQeH/2gAIAQEAAT8QRswtDR5g4a7R5C/RHFM3BKk6zThoVp3lEYcnjGIYES7/ACZ//9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Chinese Salty Egg&quot;
-        title=&quot;&quot;
-        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/c739e/salty_egg.jpg&quot;
-        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/8ee9c/salty_egg.jpg 148w,
-/static/8058f3f26913fea3b6a89a73344fe94a/ebbe7/salty_egg.jpg 295w,
-/static/8058f3f26913fea3b6a89a73344fe94a/c739e/salty_egg.jpg 590w,
-/static/8058f3f26913fea3b6a89a73344fe94a/5413e/salty_egg.jpg 885w,
-/static/8058f3f26913fea3b6a89a73344fe94a/4efde/salty_egg.jpg 1180w,
-/static/8058f3f26913fea3b6a89a73344fe94a/2b40c/salty_egg.jpg 2048w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;img src=&quot;../../hello-world/salty_egg.jpg&quot; alt=&quot;Huevo de pato en salazón&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><description><![CDATA[I’m a mechanical engineer currently based in Buenos Aires, working remotely as software developer
+for Paygarden, an American company based…]]></description><link>https://greggocabral.github.io/about-me/</link><guid isPermaLink="false">https://greggocabral.github.io/about-me/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m a mechanical engineer currently based in Buenos Aires, working remotely as software developer
+for Paygarden, an American company based in San Francisco.&lt;/p&gt;
+&lt;p&gt;Some of my current interests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;software development in clojure, clojurescript and elm, data intensive apps, progressive web apps&lt;/li&gt;
+&lt;li&gt;self development, checklists, time management, languages and learning&lt;/li&gt;
+&lt;li&gt;future of work&lt;/li&gt;
+&lt;li&gt;self funded businesses&lt;/li&gt;
+&lt;li&gt;container homes, campervans and functional interior design&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[About this blog]]></title><description><![CDATA[This blog is a place to store and expose my ideas and projects. You will find explanations of concepts I ponder and tutorials and guides on…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is a place to store and expose my ideas and projects.&lt;/p&gt;
+&lt;p&gt;You will find explanations of concepts I ponder and tutorials and guides on tools and systems I use.&lt;/p&gt;
+&lt;p&gt;I write this blog to force myself to structure thoughts in an simple and consistent way, covering all the knowledge gaps that go unnoticed when I keep them in my head. This way I expect them to come out more fluent and easier to understand whenever I refer to them in the future.&lt;/p&gt;
+&lt;p&gt;I could write all these and keep it in private, but I decided to expose it to the world to connect with likeminded people. Also, it’s a way to communicate concisely with people I already know, so that they can see how I do what I do and, hopefully, why I do it.&lt;/p&gt;
+&lt;p&gt;Hope you enjoy!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sentate]]></title><description><![CDATA[About Sentate…]]></description><link>https://greggocabral.github.io/project-sentate/</link><guid isPermaLink="false">https://greggocabral.github.io/project-sentate/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;About Sentate…&lt;/p&gt;</content:encoded></item></channel></rss>
