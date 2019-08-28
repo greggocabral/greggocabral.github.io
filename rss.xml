@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Aug 2019 15:51:39 GMT</lastBuildDate><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por  Kyle Mathews , quien vive y trabaja en San
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Aug 2019 17:23:42 GMT</lastBuildDate><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por  Kyle Mathews , quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
  Deberías seguirlo en Twitter]]></description><link>https://greggocabral.github.io/es/</link><guid isPermaLink="false">https://greggocabral.github.io/es/</guid><content:encoded>&lt;p&gt;Escrito por &lt;strong&gt;Kyle Mathews&lt;/strong&gt;, quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
-&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[The Master Checklist]]></title><description><![CDATA[4 minute read TL;DR I set up a checklist system with daily tasks and goals aiming to make sure that I grow professionally and personally…]]></description><link>https://greggocabral.github.io/master-checklist/</link><guid isPermaLink="false">https://greggocabral.github.io/master-checklist/</guid><pubDate>Sun, 25 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;4 minute read&lt;/em&gt;&lt;/p&gt;
+&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[The Master Checklist]]></title><description><![CDATA[4 minute read TL;DR I set up a checklist system with daily tasks and goals aiming to make sure that I grow professionally and personally…]]></description><link>https://greggocabral.github.io/master-checklist/</link><guid isPermaLink="false">https://greggocabral.github.io/master-checklist/</guid><pubDate>Wed, 28 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;4 minute read&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;TL;DR&lt;/h2&gt;
 &lt;p&gt;I set up a checklist system with daily tasks and goals aiming to make sure that I grow professionally and personally while having a balanced life.&lt;/p&gt;
 &lt;h2&gt;The struggle&lt;/h2&gt;
@@ -11,27 +11,26 @@ Francisco, construyendo cosas útiles.
 &lt;p&gt;So, for example, I would often question myself, how could I make sure everyday I:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;sleep enough&lt;/li&gt;
-&lt;li&gt;journal&lt;/li&gt;
 &lt;li&gt;workout&lt;/li&gt;
 &lt;li&gt;stretch&lt;/li&gt;
-&lt;li&gt;get enough deep work hours&lt;/li&gt;
 &lt;li&gt;drink enough water&lt;/li&gt;
-&lt;li&gt;take online courses&lt;/li&gt;
-&lt;li&gt;blog&lt;/li&gt;
-&lt;li&gt;make progress on side projects&lt;/li&gt;
-&lt;li&gt;do medical checks&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/quantifying-life&quot;&gt;stay close to family and friends&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;read&lt;/li&gt;
 &lt;li&gt;floss&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/deliverate-practice&quot;&gt;memorize stuff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;have medical checks&lt;/li&gt;
+&lt;li&gt;journal&lt;/li&gt;
+&lt;li&gt;get enough deep work hours&lt;/li&gt;
+&lt;li&gt;take online courses&lt;/li&gt;
+&lt;li&gt;finish side projects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/about-this-blog&quot;&gt;blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/deliverate-practice&quot;&gt;read, learn and memorize stuff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/quantifying-life&quot;&gt;stay close to family and friends&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I am in the quest to find a system that would help me track all these so that I can trust the process and relax.&lt;/p&gt;
 &lt;h2&gt;The proposed solution&lt;/h2&gt;
 &lt;p&gt;The solution I am currently trying out is, of course, a master checklist.&lt;/p&gt;
 &lt;p&gt;I first wrote down a list with everything productive that I was happily doing everyday and added everything else that I wanted to incorporate to my routine.&lt;/p&gt;
-&lt;p&gt;After that, came what I consider the most valuable part of the system: quantifying the dedication to each activity. I decided how much time I would spend doing each of the activities. I &lt;a href=&quot;/quantifying-life&quot;&gt;divided the day into 48 blocks&lt;/a&gt; of 25 minutes with 5 minute break in between. Then, I assigned  a certain amount of blocks (or fractions of them) to each activity. [read about quantifying life]&lt;/p&gt;
+&lt;p&gt;After that, came what I consider the most valuable part of the system: quantifying the dedication to each activity. I decided how much time I would spend doing each of the activities. I &lt;a href=&quot;/quantifying-life&quot;&gt;divided the day into 48 blocks&lt;/a&gt; of 25 minutes with 5 minute break in between. Then, I assigned  a certain amount of blocks (or fractions of them) to each activity.&lt;/p&gt;
 &lt;p&gt;There are items from the list, like fasting hours, that are not activities but behaviors. For those I assigned zero blocks, but should be quantified somehow in the future.&lt;/p&gt;
-&lt;p&gt;Later, I grouped the activities by type, just to make sure I took care of all the &lt;a href=&quot;/fat-success&quot;&gt;global aspects I care about&lt;/a&gt; everyday. I also classified activities as &lt;a href=&quot;/cumulative-or-maintenance&quot;&gt;maintenance or cumulative&lt;/a&gt;, to easily get a sense of the impact of the activity.&lt;/p&gt;
+&lt;p&gt;Later, I grouped the activities by type, just to make sure I took care of all the &lt;a href=&quot;/success-and-fat&quot;&gt;global aspects I care about&lt;/a&gt; everyday. I also classified activities as &lt;a href=&quot;/cumulative-or-maintenance&quot;&gt;maintenance or cumulative&lt;/a&gt;, to easily get a sense of the impact of the activity.&lt;/p&gt;
 &lt;p&gt;Finally, I put them into a Google Sheet and converted it into a checklist.&lt;/p&gt;
 &lt;h2&gt;The results so far&lt;/h2&gt;
 &lt;p&gt;I’ve been using this system every weekday for one month now. I am getting to do about 90% of the blocks and enjoy the repeated state of satisfaction at the end of the day that this is bringing to me.&lt;/p&gt;
@@ -43,10 +42,10 @@ Francisco, construyendo cosas útiles.
 &lt;li&gt;better accounting for activities in the times-per-week and times-per-month frequencies&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I hope in the future I can end up with a system that guarantees the growth and balance I mentioned before, keeps itself under continuous improvement and stays out of the way.&lt;/p&gt;
-&lt;p&gt;Anyway, I might also end up finding this too demanding/unnecessary/insane. In that case I will abandon,  hopefully after expressing my reasons for doing so. Nevertheless, I don’t feel I will regret testing it for another month and using some undeniable benefits while doing so.&lt;/p&gt;
+&lt;p&gt;Anyway, I might also end up finding this too demanding/unnecessary/insane. In that case I will abandon,  hopefully after expressing my reasons for doing so. In any case, I don’t feel I will regret testing it for another month and using some undeniable benefits while doing so.&lt;/p&gt;
 &lt;p&gt;In the meantime, here I am, earning a tick on my daily blogging block.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Email me at greggocabral@gmail.com to get access the Master Checkist Google Sheet file&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About this blog]]></title><description><![CDATA[This blog is a place to store and expose my ideas and projects. You will find explanations of concepts I ponder and tutorials and guides on…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is a place to store and expose my ideas and projects.&lt;/p&gt;
+&lt;p&gt;Email me at greggocabral@gmail.com if you want access to the master checklist Google Sheet&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About this blog]]></title><description><![CDATA[This blog is a place to store and expose my ideas and projects. You will find explanations of concepts I ponder and tutorials and guides on…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is a place to store and expose my ideas and projects.&lt;/p&gt;
 &lt;p&gt;You will find explanations of concepts I ponder and tutorials and guides on tools and systems I use.&lt;/p&gt;
 &lt;p&gt;I write this blog to force myself to structure thoughts in an simple and consistent way, covering all the knowledge gaps that go unnoticed when I keep them in my head. This way I expect them to come out more fluent and easier to understand whenever I refer to them in the future.&lt;/p&gt;
 &lt;p&gt;I could write all these and keep it in private, but I decided to expose it to the world to connect with likeminded people. Also, it’s a way to communicate concisely with people I already know, so that they can see what I do, how I do it and, hopefully, why I do it.&lt;/p&gt;
@@ -71,8 +70,7 @@ for Paygarden.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;software development in clojure, clojurescript and elm, data intensive apps, progressive web apps&lt;/li&gt;
 &lt;li&gt;self funded businesses&lt;/li&gt;
-&lt;li&gt;career design&lt;/li&gt;
-&lt;li&gt;future of work&lt;/li&gt;
+&lt;li&gt;future of work and career design&lt;/li&gt;
 &lt;li&gt;self development, checklists, time management, languages and learning&lt;/li&gt;
-&lt;li&gt;container homes, campervans and functional interior design&lt;/li&gt;
+&lt;li&gt;carpentry, container homes, campervans and functional interior design&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item></channel></rss>
