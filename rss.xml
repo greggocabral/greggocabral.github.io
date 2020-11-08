@@ -1,55 +1,114 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 28 Aug 2019 20:34:03 GMT</lastBuildDate><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por  Kyle Mathews , quien vive y trabaja en San
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gregorio Cabral]]></title><description><![CDATA[A personal site and blog]]></description><link>https://greggocabral.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 08 Nov 2020 12:15:40 GMT</lastBuildDate><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[El Blog Inicial de Gatsby]]></title><description><![CDATA[Escrito por Kyle Mathews, quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
- Deberías seguirlo en Twitter]]></description><link>https://greggocabral.github.io/es/</link><guid isPermaLink="false">https://greggocabral.github.io/es/</guid><content:encoded>&lt;p&gt;Escrito por &lt;strong&gt;Kyle Mathews&lt;/strong&gt;, quien vive y trabaja en San
+Deberías seguirlo en Twitter]]></description><link>https://greggocabral.github.io/es/</link><guid isPermaLink="false">https://greggocabral.github.io/es/</guid><content:encoded>&lt;p&gt;Escrito por &lt;strong&gt;Kyle Mathews&lt;/strong&gt;, quien vive y trabaja en San
 Francisco, construyendo cosas útiles.
-&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gregorio Cabral]]></title><link>https://greggocabral.github.io/</link><guid isPermaLink="false">https://greggocabral.github.io/</guid><content:encoded></content:encoded></item><item><title><![CDATA[The Master Checklist]]></title><description><![CDATA[4 minute read TL;DR I set up a checklist system with daily tasks and goals, aiming to make sure that I grow everyday while having a balanced…]]></description><link>https://greggocabral.github.io/master-checklist/</link><guid isPermaLink="false">https://greggocabral.github.io/master-checklist/</guid><pubDate>Wed, 28 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;4 minute read&lt;/em&gt;&lt;/p&gt;
-&lt;h2&gt;TL;DR&lt;/h2&gt;
-&lt;p&gt;I set up a checklist system with daily tasks and goals, aiming to make sure that I grow everyday while having a balanced lifestyle.&lt;/p&gt;
-&lt;h2&gt;The challenge&lt;/h2&gt;
-&lt;p&gt;For years now I’ve been curating a list of activities. These are activities that I tested for a while and found that are effective for boosting my health, mental state and productivity.&lt;/p&gt;
-&lt;p&gt;In the past years though, I realized that the length of the list seems to be converging to a value, while I keep consuming the same resources that usually generated items for the list. This is how I decided that I’ve done enough research and that it is time to focus on implementing the practices for a longer term and not for the short tests I’ve been doing.&lt;/p&gt;
-&lt;p&gt;However, I keep wondering how could it be possible for me to incorporate all these activities into everyday life, coordinate them so that they can all coexist and keep them going there for the time they require to actually produce the real claimed benefits.&lt;/p&gt;
+&lt;a href=&quot;https://twitter.com/kylemathews&quot;&gt;Deberías seguirlo en Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[On Orders of Magnitude]]></title><description><![CDATA[When consuming content on a daily basis, I get exposed to many different magnitudes. For example, I may read an article telling me that Boom…]]></description><link>https://greggocabral.github.io/orders-of-magnitude/</link><guid isPermaLink="false">https://greggocabral.github.io/orders-of-magnitude/</guid><pubDate>Sun, 08 Nov 2020 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When consuming content on a daily basis, I get exposed to many different magnitudes.&lt;/p&gt;
+&lt;p&gt;For example, I may read an article telling me that Boom Supersonic has released &lt;a href=&quot;https://boomsupersonic.com/xb-1&quot;&gt;a plane that flights at 2300 km/h&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here, since I know that commercial airplanes have a cruise speed of around 900km/h, I can tell “wow! that will make long distance flights take half the time”. Then I get more interested in the subject, probably hoping understand how they got to make such a significant increase.&lt;/p&gt;
+&lt;p&gt;But later I might read that the Argentinean bank reserves are at 10B USD or that Tesla will be manufacturing 300k cars in 2021.&lt;/p&gt;
+&lt;p&gt;There they lost me. Those two magnitudes mean nothing to me. I will probably not even read all of the figures before moving on to the next word.&lt;/p&gt;
+&lt;p&gt;In many cases, content creators give reference values, so that might keep my attention in the subject. But will most probably have forgotten about these values next time a related magnitude comes up in an article or news I’m reading.&lt;/p&gt;
+&lt;p&gt;In the cases where I know some reference values, I can make better sense of the content I am consuming. These values help me measure the impact of events, see patterns and abnormalities and make judgements. This is what get me engaged in topics, pushing me to remember new reference values and thus making all these knowledge compound.&lt;/p&gt;
+&lt;p&gt;For this reason, I have been pondering with a project that I am calling The Orders of Magnitude Project. It would consist in collecting, organizing and presenting a curated list of reference numerical values from different areas of knowledge.&lt;/p&gt;
+&lt;p&gt;Not sure about the details of any of the steps yet, but I’ve been keeping a list of the magnitudes that I would like to feature. Some of them are: years ago (big bang, dinosaurs and human civilization), distances (galaxies, planets and artificial satellites), population (earth, continent, country, city, stadium, plane), surface (country, farm, land, room), CO2 emissions (vehicles, factories, animals), website traffic (big social networks, small e-commerce), calories in food (meals, dishes, treats), company valuations (unicorns, startups, small lifestyle businesses).&lt;/p&gt;
+&lt;p&gt;By learning a few of these well selected magnitudes for each field, I would be able to create a grid that will slowly get wider with time. The wider the grid of magnitudes that I dominate, the wider the range and depth of information I will be able to understand and appreciate.&lt;/p&gt;
+&lt;p&gt;It doesn’t work if I have to search for the values in an external device. That delay in the information flow caused by stopping to perform searches breaks the train of thought and engagement with the content at hand. Instead, having a “Fluency in Order of Magnitudes” would imply having these reference values to live in my memory, ready to be used without interruption.&lt;/p&gt;
+&lt;p&gt;Provided that I have well organized data, I am confident I can achieve an acceptable level of retention in memory. I have been using space repetition for years now and I am happy with the result.&lt;/p&gt;
+&lt;p&gt;Also, I think this would be a good information database to have access to once I can have a &lt;a href=&quot;https://neuralink.com/&quot;&gt;Neuralink&lt;/a&gt; implanted in my head. That would help with the “presenting” step of the project, since I would just need to make an API that Neuralink will connect to. But until then I would be happy with relying on my old school organic memory.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Master Checklist]]></title><description><![CDATA[TL;DR I set up a checklist system with daily tasks and goals aiming to make sure that I grow professionally and personally while having a…]]></description><link>https://greggocabral.github.io/master-checklist/</link><guid isPermaLink="false">https://greggocabral.github.io/master-checklist/</guid><pubDate>Sun, 25 Aug 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;I set up a checklist system with daily tasks and goals aiming to make sure that I grow professionally and personally while having a balanced life.&lt;/p&gt;
+&lt;h2&gt;The struggle&lt;/h2&gt;
+&lt;p&gt;When reading career development blogposts and self development books, listening podcasts interviewees talk about their morning rituals or discussing “productivity” habits with friends, I often test the techniques and hacks they describe and sometimes get to see how they could improve my lifestyle.&lt;/p&gt;
+&lt;p&gt;However, I keep wondering how could it be possible for me (and even for them) to incorporate all these useful activities into everyday life, coordinate them so that they could all coexist and keep them going there for the time they require to actually produce the real claimed benefits.&lt;/p&gt;
 &lt;p&gt;So, for example, I would often question myself, how could I make sure everyday I:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;sleep enough&lt;/li&gt;
-&lt;li&gt;workout&lt;/li&gt;
-&lt;li&gt;drink enough water&lt;/li&gt;
-&lt;li&gt;floss&lt;/li&gt;
-&lt;li&gt;have medical checks&lt;/li&gt;
 &lt;li&gt;journal&lt;/li&gt;
+&lt;li&gt;workout&lt;/li&gt;
+&lt;li&gt;stretch&lt;/li&gt;
 &lt;li&gt;get enough deep work hours&lt;/li&gt;
+&lt;li&gt;drink enough water&lt;/li&gt;
 &lt;li&gt;take online courses&lt;/li&gt;
-&lt;li&gt;finish side projects&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/about-this-blog&quot;&gt;blog&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/deliverate-practice&quot;&gt;read, learn and memorize stuff&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;blog&lt;/li&gt;
+&lt;li&gt;make progress on side projects&lt;/li&gt;
+&lt;li&gt;do medical checks&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/quantifying-life&quot;&gt;stay close to family and friends&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;read&lt;/li&gt;
+&lt;li&gt;floss&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/deliverate-practice&quot;&gt;memorize stuff&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I am now in the quest to find a system that would help me track all these so that I can trust the process and relax.&lt;/p&gt;
+&lt;p&gt;I am in the quest to find a system that would help me track all these so that I can trust the process and relax.&lt;/p&gt;
 &lt;h2&gt;The proposed solution&lt;/h2&gt;
-&lt;p&gt;The solution I am currently trying out is a master checklist.&lt;/p&gt;
-&lt;p&gt;I first wrote down a list with everything that I was already happily doing everyday and then added everything else that I’ve been wanting to incorporate into my routine.&lt;/p&gt;
-&lt;p&gt;After that, Ii did what I consider the most valuable part of the system: quantifying the dedication to each activity. I decided how much time I would spend doing each of the activities. I &lt;a href=&quot;/quantifying-life&quot;&gt;divided the day into 48 blocks&lt;/a&gt; of 25 minutes with 5 minute breaks in between. Then, I assigned  a certain amount of blocks (or fractions of them) to each activity.&lt;/p&gt;
-&lt;p&gt;There are items from the list, like &lt;a href=&quot;/intermitent-fasting&quot;&gt;fasting hours&lt;/a&gt;, that are not activities but behaviors. For those I assigned zero blocks, but should be quantified somehow in the future.&lt;/p&gt;
-&lt;p&gt;Later, I grouped the activities by type, just to make sure I worked on all &lt;a href=&quot;/success-and-fat&quot;&gt;things I care about&lt;/a&gt; everyday. I also classified activities as &lt;a href=&quot;/cumulative-or-maintenance&quot;&gt;maintenance or cumulative&lt;/a&gt;, to easily get a sense of the impact of the activity.&lt;/p&gt;
+&lt;p&gt;The solution I am currently trying out is, of course, a master checklist.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ddc397e5d09fc6f66e850bc43729e3d9/275e3/master-checklist.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 49.395017793594306%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB6ElEQVQoz02SzY/SUBTF+2+71Y0rV8aMibpgFCfGiTh+RZwocdJRBrS0tGXodwu0AxQGcAFhc3znkhoXJ/e+m95fz73vaZMoQ1HmWJYjlOMQ5WKB/X4v2u12uJlOMZnkKPICRVEgz3N1nkiN+Xg8FjGnNOP4IxrmKXqtuxi/voN218BUQRYKvFwu4TguLMuC53kYDAbwfR9RFKHf70vOWhiGSNMUSZJAs1+e4711gourGtxvb2D0epjP51itbrFerxEEIWzbxvX1tTQPh0OBE8gz6wRnWSbS+gT2jqH732FaBxd0Rihduu4AhmEop46AGSnWeurnBLNOl3SuWfUvaHRqaFmf8LvdUQ4NzGYzEaGh+ogNlbPKpWma/1wzclwZ2XrRxJOWjtbnx4gb93D1y5BG2ueSwzASQBwfYiVCGAnk94Rxj5r5vImjkzO8e1tH98Mz6Jc/4NiOjM2RPc+XEYMgkEZCOGa1Al4YdxjH8WFkp36O9OEj+K9q6OhNtH+2MRqN1KWsBEogxSbXdcURI0cmjLnnDZFWDrtPz7BoP0D29T4uTo+g65fy3sqyFCVJKu7o4P8xKzjlDNWFJJlAtcz28Wdu4nbuKWcT9QZvsNlssN1u5dkc9ncYh6ry6lapoR8hULuOVf4XvdbBdlAodFoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Current state of the checklist&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ddc397e5d09fc6f66e850bc43729e3d9/b9e4f/master-checklist.png&quot;
+        srcset=&quot;/static/ddc397e5d09fc6f66e850bc43729e3d9/cf440/master-checklist.png 148w,
+/static/ddc397e5d09fc6f66e850bc43729e3d9/d2d38/master-checklist.png 295w,
+/static/ddc397e5d09fc6f66e850bc43729e3d9/b9e4f/master-checklist.png 590w,
+/static/ddc397e5d09fc6f66e850bc43729e3d9/f9b6a/master-checklist.png 885w,
+/static/ddc397e5d09fc6f66e850bc43729e3d9/2d849/master-checklist.png 1180w,
+/static/ddc397e5d09fc6f66e850bc43729e3d9/275e3/master-checklist.png 2810w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;I first wrote down a list with everything productive that I was happily doing everyday and added everything else that I wanted to incorporate to my routine.&lt;/p&gt;
+&lt;p&gt;After that, came what I consider the most valuable part of the system: quantifying the dedication to each activity. I decided how much time I would spend doing each of the activities. I &lt;a href=&quot;/quantifying-life&quot;&gt;divided the day into 48 blocks&lt;/a&gt; of 25 minutes with 5 minute break in between. Then, I assigned  a certain amount of blocks (or fractions of them) to each activity. [read about quantifying life]&lt;/p&gt;
+&lt;p&gt;There are items from the list, like fasting hours, that are not activities but behaviors. For those I assigned zero blocks, but should be quantified somehow in the future.&lt;/p&gt;
+&lt;p&gt;Later, I grouped the activities by type, just to make sure I took care of all the &lt;a href=&quot;/fat-success&quot;&gt;global aspects I care about&lt;/a&gt; everyday. I also classified activities as &lt;a href=&quot;/cumulative-or-maintenance&quot;&gt;maintenance or cumulative&lt;/a&gt;, to easily get a sense of the impact of the activity.&lt;/p&gt;
 &lt;p&gt;Finally, I put them into a Google Sheet and converted it into a checklist.&lt;/p&gt;
 &lt;h2&gt;The results so far&lt;/h2&gt;
-&lt;p&gt;I’ve been using this system every weekday for a month now. I am getting to do about 90% of the listed activities and enjoy the repeated state of satisfaction at the end of the day that this is bringing to me.&lt;/p&gt;
-&lt;p&gt;By going through the checklist a few times every workday and acting on it, I feel I am doing everything that is required to stay healthy, social and in continuous personal and professional growth, while still having a few extra hours to do whatever else I want.&lt;/p&gt;
-&lt;p&gt;The master checklist is functional and reliable enough but there is of course a lot of room for improvement. I incorporated daily “meta-blocks”, allocated to review the daily progress that far and improve the system when needed.&lt;/p&gt;
+&lt;p&gt;I’ve been using this system every weekday for one month now. I am getting to do about 90% of the blocks and enjoy the repeated state of satisfaction at the end of the day that this is bringing to me.&lt;/p&gt;
+&lt;p&gt;By going through the checklist a few times every workday and acting on it, I feel I am doing everything that is required to stay healthy, social and in continuous personal and professional growth, while still having around enough “free” hours a workday to do whatever else I want.&lt;/p&gt;
+&lt;p&gt;The master checklist is functional and reliable enough for it to be useful but there is of course a lot of room for improvement. I incorporated daily “meta-blocks”, allocated to review the daily progress that far and improve the system when needed.&lt;/p&gt;
 &lt;p&gt;Apart from regular tunings like adding/removing activities and adjusting durations, the main improvements I’m considering are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;a scoring system for zero block items and activity prioritization&lt;/li&gt;
 &lt;li&gt;better accounting for activities in the times-per-week and times-per-month frequencies&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I hope in the future I can end up with a system that guarantees the growth and balance I mentioned before, keeps itself under continuous improvement and stays out of the way.&lt;/p&gt;
-&lt;p&gt;Anyway, I might also end up finding this to be too demanding/unnecessary/insane. In that case I will abandon, hopefully after expressing my reasons for doing so. In any case, I don’t feel I will regret testing it and using some undeniable benefits while doing so.&lt;/p&gt;
+&lt;p&gt;Anyway, I might also end up finding this too demanding/unnecessary/insane. In that case I will abandon,  hopefully after expressing my reasons for doing so. Nevertheless, I don’t feel I will regret testing it for another month and using some undeniable benefits while doing so.&lt;/p&gt;
 &lt;p&gt;In the meantime, here I am, earning a tick on my daily blogging block.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Email me at greggocabral@gmail.com if you want access to the master checklist Google Sheet&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About this blog]]></title><description><![CDATA[This blog is a place to store and expose my ideas and projects. You will find explanations of concepts I ponder and tutorials and guides on…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is a place to store and expose my ideas and projects.&lt;/p&gt;
+&lt;p&gt;Write me at greggocabral@gmail.com to get invited to access the Master Checkist file&lt;/p&gt;</content:encoded></item><item><title><![CDATA[On Orders of Magnitude]]></title><description><![CDATA[This blog is a place to store and expose my ideas and projects. You will find explanations of concepts I ponder and tutorials and guides on…]]></description><link>https://greggocabral.github.io/about-this-blog/</link><guid isPermaLink="false">https://greggocabral.github.io/about-this-blog/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is a place to store and expose my ideas and projects.&lt;/p&gt;
 &lt;p&gt;You will find explanations of concepts I ponder and tutorials and guides on tools and systems I use.&lt;/p&gt;
 &lt;p&gt;I write this blog to force myself to structure thoughts in an simple and consistent way, covering all the knowledge gaps that go unnoticed when I keep them in my head. This way I expect them to come out more fluent and easier to understand whenever I refer to them in the future.&lt;/p&gt;
 &lt;p&gt;I could write all these and keep it in private, but I decided to expose it to the world to connect with likeminded people. Also, it’s a way to communicate concisely with people I already know, so that they can see what I do, how I do it and, hopefully, why I do it.&lt;/p&gt;
-&lt;p&gt;Hope you enjoy!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Acerca de mi]]></title><description><![CDATA[¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante! Estoy seguro que escribiré un montón de cosas interesantes en el futuro…]]></description><link>https://greggocabral.github.io/es/acerca-de-mi/</link><guid isPermaLink="false">https://greggocabral.github.io/es/acerca-de-mi/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante!&lt;/p&gt;
+&lt;p&gt;Hope you enjoy!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><description><![CDATA[I’m a mechanical engineer currently based in Buenos Aires, working remotely as a software developer
+for Paygarden. Some of my current…]]></description><link>https://greggocabral.github.io/about-me/</link><guid isPermaLink="false">https://greggocabral.github.io/about-me/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m a mechanical engineer currently based in Buenos Aires, working remotely as a software developer
+for Paygarden.&lt;/p&gt;
+&lt;p&gt;Some of my current interests:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;software development in clojure, clojurescript and elm, data intensive apps, progressive web apps&lt;/li&gt;
+&lt;li&gt;self funded businesses&lt;/li&gt;
+&lt;li&gt;career design&lt;/li&gt;
+&lt;li&gt;future of work&lt;/li&gt;
+&lt;li&gt;self development, checklists, time management, languages and learning&lt;/li&gt;
+&lt;li&gt;container homes, campervans and functional interior design&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Sentate]]></title><description><![CDATA[About Sentate…]]></description><link>https://greggocabral.github.io/project-sentate/</link><guid isPermaLink="false">https://greggocabral.github.io/project-sentate/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;About Sentate…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Acerca de mi]]></title><description><![CDATA[¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante! Estoy seguro que escribiré un montón de cosas interesantes en el futuro…]]></description><link>https://greggocabral.github.io/es/acerca-de-mi/</link><guid isPermaLink="false">https://greggocabral.github.io/es/acerca-de-mi/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;¡Este es mi primer post en mi nuevo blog falso! ¡Que emocionante!&lt;/p&gt;
 &lt;p&gt;Estoy seguro que escribiré un montón de cosas interesantes en el futuro.&lt;/p&gt;
 &lt;p&gt;Ah, y aquí viene una gran cita de la Wikipedia sobre
 &lt;a href=&quot;https://es.wikipedia.org/wiki/Huevo_de_pato_en_salaz%C3%B3n&quot;&gt;huevo de pato en salazón&lt;/a&gt;.&lt;/p&gt;
@@ -63,14 +122,4 @@ tiempo. En un clima tropical, como el filipino, bastan con tres semanas. Sin
 embargo, en España por ejemplo, y dependiendo de la zona, podrían ser de 3 á 5
 semanas.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../../hello-world/salty_egg.jpg&quot; alt=&quot;Huevo de pato en salazón&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[About me]]></title><description><![CDATA[I’m a mechanical engineer currently based in Buenos Aires, working remotely as a software developer
-for Paygarden. Some of my current…]]></description><link>https://greggocabral.github.io/about-me/</link><guid isPermaLink="false">https://greggocabral.github.io/about-me/</guid><pubDate>Sun, 11 Aug 2019 14:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’m a mechanical engineer currently based in Buenos Aires, working remotely as a software developer
-for Paygarden.&lt;/p&gt;
-&lt;p&gt;Some of my current interests:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;software development in clojure, clojurescript and elm, data intensive apps, progressive web apps&lt;/li&gt;
-&lt;li&gt;self funded businesses&lt;/li&gt;
-&lt;li&gt;future of work and career design&lt;/li&gt;
-&lt;li&gt;self development, checklists, time management, languages and learning&lt;/li&gt;
-&lt;li&gt;carpentry, container homes, campervans and functional interior design&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;img src=&quot;../../hello-world/salty_egg.jpg&quot; alt=&quot;Huevo de pato en salazón&quot;&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
