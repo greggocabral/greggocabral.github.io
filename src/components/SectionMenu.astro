@@ -1,0 +1,201 @@
+---
+import type { CategoryGroup } from '../lib/posts';
+
+interface Props {
+  categories: CategoryGroup[];
+}
+
+const { categories } = Astro.props;
+
+const toId = (...parts: string[]) =>
+  'section-' + parts.join('-').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+---
+
+<nav class="menu" aria-label="Posts and projects">
+  <ul class="menu-list">
+    {categories.map((category) => {
+      const categoryId = toId(category.name);
+      return (
+        <li class="section section-category">
+          <button class="section-toggle" type="button" aria-expanded="false" aria-controls={categoryId}>
+            {category.name}
+            <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" />
+            </svg>
+          </button>
+          <div class="section-panel" id={categoryId}>
+            <ul class="section-panel-inner">
+              {category.subCategories.map((subCategory, i) => {
+                const subCategoryId = toId(category.name, subCategory.name);
+                return (
+                  <li class="section section-sub" style={`--i: ${i}`}>
+                    <button class="section-toggle" type="button" aria-expanded="false" aria-controls={subCategoryId}>
+                      {subCategory.name}
+                      <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M4 6l4 4 4-4" />
+                      </svg>
+                    </button>
+                    <div class="section-panel" id={subCategoryId}>
+                      <ul class="section-panel-inner">
+                        {subCategory.posts.map((post, j) => (
+                          <li class="entry" style={`--i: ${j}`}>
+                            <a href={`/${post.id}/`}>{post.data.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
+<script>
+  // Each toggle opens/closes independently; CSS drives the animation off aria-expanded.
+  document.querySelector('.menu')?.addEventListener('click', (event) => {
+    const toggle = (event.target as Element).closest('.section-toggle');
+    if (!toggle) return;
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+  });
+</script>
+
+<style>
+  .menu-list,
+  .section-panel-inner {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.2em 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: 700;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: color var(--dur-fast) ease;
+  }
+
+  .section-toggle:hover {
+    color: var(--accent);
+  }
+
+  /* Panels clip their content, so draw focus rings inside the element. */
+  .section-toggle:focus-visible,
+  .entry a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+    border-radius: 3px;
+  }
+
+  .section-category {
+    font-size: var(--step-2);
+    padding-block: 0.3rem;
+  }
+
+  .section-sub {
+    font-size: var(--step-1);
+    padding-top: 0.35rem;
+  }
+
+  .entry {
+    font-size: var(--step-0);
+    padding-block: 0.3rem;
+  }
+
+  .section-sub:first-child {
+    padding-top: 0.5rem;
+  }
+
+  .entry:first-child {
+    padding-top: 0.5rem;
+  }
+
+  .entry a {
+    display: inline-block;
+    padding: 0.1em 0;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color var(--dur-fast) ease;
+  }
+
+  .entry a:hover {
+    color: var(--accent);
+  }
+
+  .chevron {
+    width: 0.6em;
+    height: 0.6em;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.25;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.55;
+    transform: rotate(-90deg);
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .section-toggle[aria-expanded='true'] .chevron {
+    transform: none;
+  }
+
+  /*
+   * Collapse only when JS is available to expand. Animating grid rows 0fr → 1fr
+   * tracks the real content height, including nested panels opening inside.
+   * Closed panels are visibility:hidden (after the collapse finishes) so their
+   * links drop out of the tab order; open ones inherit, so closing a parent
+   * also hides everything nested in it.
+   */
+  :global(html.js) .section-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    transition:
+      grid-template-rows var(--dur) var(--ease),
+      visibility 0s var(--dur);
+  }
+
+  :global(html.js) .section-toggle[aria-expanded='true'] + .section-panel {
+    grid-template-rows: 1fr;
+    visibility: inherit;
+    transition-delay: 0s;
+  }
+
+  .section-panel-inner {
+    min-height: 0;
+    overflow: hidden;
+    /* Room for focus rings at the edges without shifting alignment. */
+    margin-inline: -4px;
+    padding-inline: 4px;
+  }
+
+  /* Direct children slide in, staggered, when their panel opens. */
+  :global(html.js) .section-panel-inner > * {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+    transition:
+      opacity var(--dur) var(--ease),
+      transform var(--dur) var(--ease);
+  }
+
+  :global(html.js) .section-toggle[aria-expanded='true'] + .section-panel > .section-panel-inner > * {
+    opacity: 1;
+    transform: none;
+    transition-delay: calc(var(--i, 0) * var(--stagger));
+  }
+</style>

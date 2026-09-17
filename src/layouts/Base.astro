@@ -1,0 +1,29 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" type="application/rss+xml" title="Gregorio Cabral" href="/rss.xml" />
+    <!-- Collapsed menu styles only apply once we know JS can expand them. -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
+  </head>
+  <body>
+    <div class="container">
+      <slot />
+    </div>
+  </body>
+</html>

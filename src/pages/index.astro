@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionMenu from '../components/SectionMenu.astro';
+import { getPosts, groupPosts } from '../lib/posts';
+
+const categories = groupPosts(await getPosts());
+---
+
+<Base title="Gregorio Cabral" description="Personal website and blog">
+  <main class="home">
+    <section class="home-profile">
+      <img class="home-photo" src="/profile.jpg" alt="Gregorio Cabral" width="370" height="370" />
+      <div>
+        <h1 class="home-name">Gregorio Cabral</h1>
+        <p class="home-bio">
+          software developer<br />
+          based in Buenos Aires, Argentina<br />
+          get in touch -{' '}
+          <a href="https://twitter.com/greggocabral" target="_blank" rel="noopener">twitter</a>{' '}
+          -{' '}
+          <a href="https://github.com/greggocabral" target="_blank" rel="noopener">github</a>
+        </p>
+      </div>
+    </section>
+    <SectionMenu categories={categories} />
+  </main>
+</Base>
