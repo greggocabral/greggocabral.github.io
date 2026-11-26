@@ -16,7 +16,7 @@ const posts = defineCollection({
 });
 
 // Current projects. Add another by dropping a markdown file in
-// src/content/projects — the Projects menu and /projects/ pick it up from here.
+// src/content/projects — the Projects menu and /projects/[slug]/ pick it up from here.
 const projects = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/projects' }),
   schema: z.object({
