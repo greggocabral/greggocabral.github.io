@@ -2,7 +2,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Project = CollectionEntry<'projects'>;
 
-/** Side projects, in `order` (then title). */
+/** Current projects, in `order` (then title). */
 export async function getProjects(): Promise<Project[]> {
   const projects = await getCollection('projects');
   return projects.sort(

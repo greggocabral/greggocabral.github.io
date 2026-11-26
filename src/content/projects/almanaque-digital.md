@@ -5,8 +5,8 @@ highlights:
   - Drag across days to add an event, or drag one to move it
   - Several calendars you can share, plus Argentine public holidays
   - Spanish and English, with a student year and a traveler year to try
-url: https://calendar-app-v2-nine.vercel.app
-logo: https://calendar-app-v2-nine.vercel.app/icon.svg
+url: https://almanaque.digital
+logo: https://www.almanaque.digital/icon.svg
 screenshot: /images/projects/almanaque-digital.png
 order: 2
 ---

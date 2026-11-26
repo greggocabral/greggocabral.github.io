@@ -15,27 +15,9 @@ const toId = (...parts: string[]) =>
 
 <nav class="menu" aria-label="Posts and projects">
   <ul class="menu-list">
-    {projects.length > 0 && (
-      <li class="section section-category">
-        <button class="section-toggle" type="button" aria-expanded="false" aria-controls={toId('Side projects')}>
-          Side projects
-          <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
-            <path d="M4 6l4 4 4-4" />
-          </svg>
-        </button>
-        <div class="section-panel" id={toId('Side projects')}>
-          <ul class="section-panel-inner">
-            {projects.map((project, i) => (
-              <li class="entry" style={`--i: ${i}`}>
-                <a href={`/projects/${project.id}/`}>{project.data.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </li>
-    )}
     {categories.map((category) => {
       const categoryId = toId(category.name);
+      const leading = category.name === 'Projects' ? projects : [];
       return (
         <li class="section section-category">
           <button class="section-toggle" type="button" aria-expanded="false" aria-controls={categoryId}>
@@ -46,10 +28,15 @@ const toId = (...parts: string[]) =>
           </button>
           <div class="section-panel" id={categoryId}>
             <ul class="section-panel-inner">
+              {leading.map((project, i) => (
+                <li class="section section-sub" style={`--i: ${i}`}>
+                  <a class="section-link" href={`/projects/${project.id}/`}>{project.data.title}</a>
+                </li>
+              ))}
               {category.subCategories.map((subCategory, i) => {
                 const subCategoryId = toId(category.name, subCategory.name);
                 return (
-                  <li class="section section-sub" style={`--i: ${i}`}>
+                  <li class="section section-sub" style={`--i: ${i + leading.length}`}>
                     <button class="section-toggle" type="button" aria-expanded="false" aria-controls={subCategoryId}>
                       {subCategory.name}
                       <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
@@ -94,7 +81,8 @@ const toId = (...parts: string[]) =>
     padding: 0;
   }
 
-  .section-toggle {
+  .section-toggle,
+  .section-link {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
@@ -110,12 +98,14 @@ const toId = (...parts: string[]) =>
     transition: color var(--dur-fast) ease;
   }
 
-  .section-toggle:hover {
+  .section-toggle:hover,
+  .section-link:hover {
     color: var(--accent);
   }
 
   /* Panels clip their content, so draw focus rings inside the element. */
   .section-toggle:focus-visible,
+  .section-link:focus-visible,
   .entry a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
