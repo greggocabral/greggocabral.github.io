@@ -22,7 +22,7 @@ const { title, description } = project.data;
 <Base title={`${title} | Gregorio Cabral`} description={description}>
   <main class="post project-page">
     <p class="breadcrumb"><a href="/projects/">Side projects</a></p>
-    <ProjectCard project={project} heading="h1" />
+    <ProjectCard project={project} heading="h1" large />
     <footer class="post-footer">
       <a href="/projects/">← Side projects</a>
     </footer>
@@ -31,11 +31,11 @@ const { title, description } = project.data;
 
 <style>
   .project-page {
-    max-width: 46rem;
+    max-width: none;
   }
 
   .breadcrumb {
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
   }
 
   .breadcrumb a {
@@ -45,5 +45,9 @@ const { title, description } = project.data;
 
   .breadcrumb a:hover {
     color: var(--accent);
+  }
+
+  .post-footer {
+    margin-top: 4.5rem;
   }
 </style>

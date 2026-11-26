@@ -17,14 +17,21 @@ const toId = (...parts: string[]) =>
   <ul class="menu-list">
     {projects.length > 0 && (
       <li class="section section-category">
-        <a class="section-link" href="/projects/">Side projects</a>
-        <ul class="project-entries">
-          {projects.map((project, i) => (
-            <li class="entry" style={`--i: ${i}`}>
-              <a href={`/projects/${project.id}/`}>{project.data.title}</a>
-            </li>
-          ))}
-        </ul>
+        <button class="section-toggle" type="button" aria-expanded="false" aria-controls={toId('Side projects')}>
+          Side projects
+          <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M4 6l4 4 4-4" />
+          </svg>
+        </button>
+        <div class="section-panel" id={toId('Side projects')}>
+          <ul class="section-panel-inner">
+            {projects.map((project, i) => (
+              <li class="entry" style={`--i: ${i}`}>
+                <a href={`/projects/${project.id}/`}>{project.data.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </li>
     )}
     {categories.map((category) => {
@@ -87,8 +94,7 @@ const toId = (...parts: string[]) =>
     padding: 0;
   }
 
-  .section-toggle,
-  .section-link {
+  .section-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
@@ -104,24 +110,16 @@ const toId = (...parts: string[]) =>
     transition: color var(--dur-fast) ease;
   }
 
-  .section-toggle:hover,
-  .section-link:hover {
+  .section-toggle:hover {
     color: var(--accent);
   }
 
   /* Panels clip their content, so draw focus rings inside the element. */
   .section-toggle:focus-visible,
-  .section-link:focus-visible,
   .entry a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
     border-radius: 3px;
-  }
-
-  .project-entries {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 
   .section-category {
