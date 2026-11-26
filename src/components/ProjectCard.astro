@@ -1,0 +1,190 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  project: CollectionEntry<'projects'>;
+  heading?: 'h1' | 'h2';
+  /** Dedicated project page: roomier blocks and a full-width screenshot. */
+  large?: boolean;
+}
+
+const { project, heading = 'h2', large = false } = Astro.props;
+const { title, description, highlights, url, logo, screenshot } = project.data;
+const Heading = heading;
+---
+
+<article class:list={['card', { 'card-page': large }]} id={project.id}>
+  <header class="card-head">
+    <span class="logo">
+      <img
+        class="logo-img"
+        alt=""
+        width="40"
+        height="40"
+        hidden
+        data-logo={logo}
+        data-logo-origin={new URL(url).origin}
+      />
+      <span class="logo-fallback" aria-hidden="true">{title.slice(0, 1)}</span>
+    </span>
+    <div>
+      <Heading class="card-title">
+        {large ? title : <a href={`/projects/${project.id}/`}>{title}</a>}
+      </Heading>
+      <p class="card-url">
+        <a href={url} target="_blank" rel="noopener">{url}</a>
+      </p>
+    </div>
+  </header>
+  <p class="card-blurb">{description}</p>
+  <ul class="card-points">
+    {highlights.map((point) => (
+      <li>{point}</li>
+    ))}
+  </ul>
+  <a class="shot" href={url} target="_blank" rel="noopener">
+    <img src={screenshot} alt={`Screenshot of ${title}`} width="1280" height="800" />
+  </a>
+</article>
+
+<script>
+  const EXTRA = ['/favicon.svg', '/icon.svg', '/apple-touch-icon.png', '/apple-icon.png', '/favicon.ico'];
+
+  document.querySelectorAll<HTMLImageElement>('img[data-logo]').forEach((img) => {
+    const primary = img.dataset.logo;
+    const origin = img.dataset.logoOrigin;
+    if (!primary || !origin) return;
+    const urls = [primary, ...EXTRA.map((path) => origin + path)].filter(
+      (url, i, all) => all.indexOf(url) === i,
+    );
+    const fallback = img.nextElementSibling;
+    let i = 0;
+
+    const showFallback = () => {
+      img.remove();
+      fallback?.removeAttribute('hidden');
+    };
+
+    img.addEventListener('error', () => {
+      i += 1;
+      if (i >= urls.length) showFallback();
+      else img.src = urls[i];
+    });
+    img.addEventListener('load', () => {
+      img.hidden = false;
+      fallback?.setAttribute('hidden', '');
+    });
+    img.src = urls[0];
+  });
+</script>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .card-page {
+    gap: clamp(2.25rem, 4vw, 3.25rem);
+  }
+
+  .card-page .card-head,
+  .card-page .card-blurb,
+  .card-page .card-points {
+    max-width: var(--measure);
+  }
+
+  .card-page .logo {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex: none;
+  }
+
+  .logo-img,
+  .logo-fallback {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-img {
+    object-fit: contain;
+  }
+
+  .logo-fallback {
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .logo-fallback[hidden] {
+    display: none;
+  }
+
+  .card-title {
+    font-size: var(--step-2);
+    line-height: 1.15;
+  }
+
+  .card-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .card-title a:hover {
+    color: var(--accent);
+  }
+
+  h1.card-title {
+    font-size: var(--step-3);
+  }
+
+  .card-url {
+    margin-top: 0.4rem;
+    font-size: var(--step--1);
+    overflow-wrap: anywhere;
+  }
+
+  .card-url a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .card-url a:hover {
+    text-decoration: underline;
+  }
+
+  .card-points {
+    padding-left: 1.2em;
+  }
+
+  .card-points li + li {
+    margin-top: 0.55em;
+  }
+
+  .shot {
+    display: block;
+  }
+
+  .shot img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+</style>

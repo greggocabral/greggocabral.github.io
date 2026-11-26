@@ -1,11 +1,13 @@
 ---
 import type { CategoryGroup } from '../lib/posts';
+import type { Project } from '../lib/projects';
 
 interface Props {
   categories: CategoryGroup[];
+  projects?: Project[];
 }
 
-const { categories } = Astro.props;
+const { categories, projects = [] } = Astro.props;
 
 const toId = (...parts: string[]) =>
   'section-' + parts.join('-').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -27,6 +29,8 @@ const toId = (...parts: string[]) =>
             <ul class="section-panel-inner">
               {category.subCategories.map((subCategory, i) => {
                 const subCategoryId = toId(category.name, subCategory.name);
+                const grouped =
+                  category.name === 'Projects' && subCategory.name === 'SaaS' ? projects : [];
                 return (
                   <li class="section section-sub" style={`--i: ${i}`}>
                     <button class="section-toggle" type="button" aria-expanded="false" aria-controls={subCategoryId}>
@@ -37,8 +41,13 @@ const toId = (...parts: string[]) =>
                     </button>
                     <div class="section-panel" id={subCategoryId}>
                       <ul class="section-panel-inner">
-                        {subCategory.posts.map((post, j) => (
+                        {grouped.map((project, j) => (
                           <li class="entry" style={`--i: ${j}`}>
+                            <a href={`/projects/${project.id}/`}>{project.data.title}</a>
+                          </li>
+                        ))}
+                        {subCategory.posts.map((post, j) => (
+                          <li class="entry" style={`--i: ${j + grouped.length}`}>
                             <a href={`/${post.id}/`}>{post.data.title}</a>
                           </li>
                         ))}
@@ -85,6 +94,7 @@ const toId = (...parts: string[]) =>
     font-weight: 700;
     line-height: 1.2;
     cursor: pointer;
+    text-decoration: none;
     transition: color var(--dur-fast) ease;
   }
 

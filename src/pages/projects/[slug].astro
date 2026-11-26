@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getProjects, type Project } from '../../lib/projects';
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const { title, description } = project.data;
+---
+
+<Base title={`${title} | Gregorio Cabral`} description={description}>
+  <main class="post project-page">
+    <p class="breadcrumb"><a href="/projects/">Projects</a> › SaaS</p>
+    <ProjectCard project={project} heading="h1" large />
+    <footer class="post-footer">
+      <a href="/projects/">← Projects</a>
+    </footer>
+  </main>
+</Base>
+
+<style>
+  .project-page {
+    max-width: none;
+  }
+
+  .breadcrumb {
+    margin-bottom: 2.25rem;
+  }
+
+  .breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .post-footer {
+    margin-top: 4.5rem;
+  }
+</style>
