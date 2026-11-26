@@ -1,9 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import { getPosts } from '../../lib/posts';
 import { getProjects } from '../../lib/projects';
 
 const projects = await getProjects();
+const saasPosts = (await getPosts()).filter(
+  (post) => post.data.category === 'Projects' && post.data.subCategory === 'SaaS',
+);
 ---
 
 <Base
@@ -14,11 +18,22 @@ const projects = await getProjects();
     <header class="post-header">
       <p class="breadcrumb"><a href="/">Home</a></p>
       <h1 class="post-title">Projects</h1>
-      <p class="byline">A few products I'm building right now.</p>
     </header>
-    {projects.map((project) => (
-      <ProjectCard project={project} />
-    ))}
+    <section class="group">
+      <h2 class="group-label">SaaS</h2>
+      {projects.map((project) => (
+        <ProjectCard project={project} />
+      ))}
+      {saasPosts.length > 0 && (
+        <ul class="group-posts">
+          {saasPosts.map((post) => (
+            <li>
+              <a href={`/${post.id}/`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
     <footer class="post-footer">
       <a href="/">← Home</a>
     </footer>
@@ -40,9 +55,31 @@ const projects = await getProjects();
     color: var(--accent);
   }
 
+  .group-label {
+    margin-bottom: 2rem;
+    font-size: var(--step-1);
+    line-height: 1.25;
+  }
+
   .projects :global(.card + .card) {
     margin-top: 4rem;
     padding-top: 3.5rem;
     border-top: 1px solid var(--rule);
+  }
+
+  .group-posts {
+    margin: 3rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .group-posts a {
+    color: var(--text-muted);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .group-posts a:hover {
+    color: var(--accent);
   }
 </style>

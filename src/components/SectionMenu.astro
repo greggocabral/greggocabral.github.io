@@ -17,7 +17,6 @@ const toId = (...parts: string[]) =>
   <ul class="menu-list">
     {categories.map((category) => {
       const categoryId = toId(category.name);
-      const leading = category.name === 'Projects' ? projects : [];
       return (
         <li class="section section-category">
           <button class="section-toggle" type="button" aria-expanded="false" aria-controls={categoryId}>
@@ -28,15 +27,12 @@ const toId = (...parts: string[]) =>
           </button>
           <div class="section-panel" id={categoryId}>
             <ul class="section-panel-inner">
-              {leading.map((project, i) => (
-                <li class="section section-sub" style={`--i: ${i}`}>
-                  <a class="section-link" href={`/projects/${project.id}/`}>{project.data.title}</a>
-                </li>
-              ))}
               {category.subCategories.map((subCategory, i) => {
                 const subCategoryId = toId(category.name, subCategory.name);
+                const grouped =
+                  category.name === 'Projects' && subCategory.name === 'SaaS' ? projects : [];
                 return (
-                  <li class="section section-sub" style={`--i: ${i + leading.length}`}>
+                  <li class="section section-sub" style={`--i: ${i}`}>
                     <button class="section-toggle" type="button" aria-expanded="false" aria-controls={subCategoryId}>
                       {subCategory.name}
                       <svg class="chevron" viewBox="0 0 16 16" aria-hidden="true">
@@ -45,8 +41,13 @@ const toId = (...parts: string[]) =>
                     </button>
                     <div class="section-panel" id={subCategoryId}>
                       <ul class="section-panel-inner">
-                        {subCategory.posts.map((post, j) => (
+                        {grouped.map((project, j) => (
                           <li class="entry" style={`--i: ${j}`}>
+                            <a href={`/projects/${project.id}/`}>{project.data.title}</a>
+                          </li>
+                        ))}
+                        {subCategory.posts.map((post, j) => (
+                          <li class="entry" style={`--i: ${j + grouped.length}`}>
                             <a href={`/${post.id}/`}>{post.data.title}</a>
                           </li>
                         ))}
@@ -81,8 +82,7 @@ const toId = (...parts: string[]) =>
     padding: 0;
   }
 
-  .section-toggle,
-  .section-link {
+  .section-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
@@ -98,14 +98,12 @@ const toId = (...parts: string[]) =>
     transition: color var(--dur-fast) ease;
   }
 
-  .section-toggle:hover,
-  .section-link:hover {
+  .section-toggle:hover {
     color: var(--accent);
   }
 
   /* Panels clip their content, so draw focus rings inside the element. */
   .section-toggle:focus-visible,
-  .section-link:focus-visible,
   .entry a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
