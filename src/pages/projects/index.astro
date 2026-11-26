@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectBody from '../../components/ProjectBody.astro';
+import { getProjects } from '../../lib/projects';
+
+const projects = await getProjects();
+---
+
+<Base
+  title="Side projects | Gregorio Cabral"
+  description="Side projects Gregorio Cabral is currently building, including Alquilonido and Almanaque Digital."
+>
+  <main class="post projects">
+    <header class="post-header">
+      <p class="breadcrumb"><a href="/">Home</a></p>
+      <h1 class="post-title">Side projects</h1>
+      <p class="byline">A few products I'm building right now.</p>
+      {projects.length > 1 && (
+        <nav class="jump" aria-label="On this page">
+          {projects.map((project, i) => (
+            <span>
+              {i > 0 && <span aria-hidden="true"> · </span>}
+              <a href={`#${project.id}`}>{project.data.title}</a>
+            </span>
+          ))}
+        </nav>
+      )}
+    </header>
+    {projects.map((project) => (
+      <article class="project" id={project.id}>
+        <h2 class="project-title">
+          <a href={`/projects/${project.id}/`}>{project.data.title}</a>
+        </h2>
+        <p class="project-summary">{project.data.description}</p>
+        <ProjectBody project={project} depth={3} />
+      </article>
+    ))}
+    <footer class="post-footer">
+      <a href="/">← Home</a>
+    </footer>
+  </main>
+</Base>
+
+<style>
+  .breadcrumb a,
+  .project-title a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .breadcrumb a:hover,
+  .project-title a:hover {
+    color: var(--accent);
+  }
+
+  .jump {
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+  .jump a {
+    text-decoration: none;
+  }
+
+  .jump a:hover {
+    text-decoration: underline;
+  }
+
+  .project-summary {
+    margin-top: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .project + .project {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .project :global(.prose) > :global(:first-child) {
+    margin-top: 1.25em;
+  }
+</style>

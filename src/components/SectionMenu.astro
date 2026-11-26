@@ -1,11 +1,13 @@
 ---
 import type { CategoryGroup } from '../lib/posts';
+import type { Project } from '../lib/projects';
 
 interface Props {
   categories: CategoryGroup[];
+  projects?: Project[];
 }
 
-const { categories } = Astro.props;
+const { categories, projects = [] } = Astro.props;
 
 const toId = (...parts: string[]) =>
   'section-' + parts.join('-').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -13,6 +15,18 @@ const toId = (...parts: string[]) =>
 
 <nav class="menu" aria-label="Posts and projects">
   <ul class="menu-list">
+    {projects.length > 0 && (
+      <li class="section section-category">
+        <a class="section-link" href="/projects/">Side projects</a>
+        <ul class="project-entries">
+          {projects.map((project, i) => (
+            <li class="entry" style={`--i: ${i}`}>
+              <a href={`/projects/${project.id}/`}>{project.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </li>
+    )}
     {categories.map((category) => {
       const categoryId = toId(category.name);
       return (
@@ -73,7 +87,8 @@ const toId = (...parts: string[]) =>
     padding: 0;
   }
 
-  .section-toggle {
+  .section-toggle,
+  .section-link {
     display: inline-flex;
     align-items: center;
     gap: 0.35em;
@@ -85,19 +100,28 @@ const toId = (...parts: string[]) =>
     font-weight: 700;
     line-height: 1.2;
     cursor: pointer;
+    text-decoration: none;
     transition: color var(--dur-fast) ease;
   }
 
-  .section-toggle:hover {
+  .section-toggle:hover,
+  .section-link:hover {
     color: var(--accent);
   }
 
   /* Panels clip their content, so draw focus rings inside the element. */
   .section-toggle:focus-visible,
+  .section-link:focus-visible,
   .entry a:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
     border-radius: 3px;
+  }
+
+  .project-entries {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .section-category {

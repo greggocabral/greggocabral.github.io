@@ -2,8 +2,10 @@
 import Base from '../layouts/Base.astro';
 import SectionMenu from '../components/SectionMenu.astro';
 import { getPosts, groupPosts } from '../lib/posts';
+import { getProjects } from '../lib/projects';
 
 const categories = groupPosts(await getPosts());
+const projects = await getProjects();
 ---
 
 <Base title="Gregorio Cabral" description="Personal website and blog">
@@ -22,6 +24,6 @@ const categories = groupPosts(await getPosts());
         </p>
       </div>
     </section>
-    <SectionMenu categories={categories} />
+    <SectionMenu categories={categories} projects={projects} />
   </main>
 </Base>
