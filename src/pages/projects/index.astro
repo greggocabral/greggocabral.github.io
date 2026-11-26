@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import ProjectBody from '../../components/ProjectBody.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
 import { getProjects } from '../../lib/projects';
 
 const projects = await getProjects();
@@ -15,25 +15,9 @@ const projects = await getProjects();
       <p class="breadcrumb"><a href="/">Home</a></p>
       <h1 class="post-title">Side projects</h1>
       <p class="byline">A few products I'm building right now.</p>
-      {projects.length > 1 && (
-        <nav class="jump" aria-label="On this page">
-          {projects.map((project, i) => (
-            <span>
-              {i > 0 && <span aria-hidden="true"> · </span>}
-              <a href={`#${project.id}`}>{project.data.title}</a>
-            </span>
-          ))}
-        </nav>
-      )}
     </header>
     {projects.map((project) => (
-      <article class="project" id={project.id}>
-        <h2 class="project-title">
-          <a href={`/projects/${project.id}/`}>{project.data.title}</a>
-        </h2>
-        <p class="project-summary">{project.data.description}</p>
-        <ProjectBody project={project} depth={3} />
-      </article>
+      <ProjectCard project={project} />
     ))}
     <footer class="post-footer">
       <a href="/">← Home</a>
@@ -42,43 +26,23 @@ const projects = await getProjects();
 </Base>
 
 <style>
-  .breadcrumb a,
-  .project-title a {
+  .projects {
+    max-width: 46rem;
+  }
+
+  .breadcrumb a {
     color: inherit;
     font-weight: 600;
     text-decoration: none;
   }
 
-  .breadcrumb a:hover,
-  .project-title a:hover {
+  .breadcrumb a:hover {
     color: var(--accent);
   }
 
-  .jump {
-    margin-top: 1rem;
-    font-weight: 600;
-  }
-
-  .jump a {
-    text-decoration: none;
-  }
-
-  .jump a:hover {
-    text-decoration: underline;
-  }
-
-  .project-summary {
-    margin-top: 0.75rem;
-    color: var(--text-muted);
-  }
-
-  .project + .project {
-    margin-top: 3rem;
+  .projects :global(.card + .card) {
+    margin-top: 2.75rem;
     padding-top: 2.5rem;
     border-top: 1px solid var(--rule);
-  }
-
-  .project :global(.prose) > :global(:first-child) {
-    margin-top: 1.25em;
   }
 </style>

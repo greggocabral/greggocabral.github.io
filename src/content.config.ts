@@ -22,12 +22,12 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    audience: z.string(),
-    problem: z.string(),
-    features: z.array(z.string()).min(1),
-    stack: z.array(z.string()).min(1),
-    url: z.url().optional(),
-    repo: z.url().optional(),
+    highlights: z.array(z.string()).min(1).max(4),
+    url: z.url(),
+    // Favicon or logo on the live app. The page requests this URL in the
+    // browser, so a new logo on that domain shows up without a rebuild.
+    logo: z.url(),
+    screenshot: z.string(),
     // Lower comes first.
     order: z.number().optional(),
   }),
